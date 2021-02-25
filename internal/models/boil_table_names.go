@@ -10,6 +10,7 @@ var TableNames = struct {
 	Project       string
 	ProjectStatus string
 	User          string
+	Wiki          string
 }{
 	Issue:         "issue",
 	IssueType:     "issue_type",
@@ -17,4 +18,5 @@ var TableNames = struct {
 	Project:       "project",
 	ProjectStatus: "project_status",
 	User:          "user",
+	Wiki:          "wiki",
 }
