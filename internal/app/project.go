@@ -8,6 +8,7 @@ import (
 var projectCommand = &cobra.Command{
 	Use:     "project",
 	Aliases: []string{"p"},
+	Short:   "provides CRUD operations",
 	RunE:    projectCommandRunE,
 }
 

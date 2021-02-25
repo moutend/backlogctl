@@ -17,6 +17,7 @@ import (
 var issueCommand = &cobra.Command{
 	Use:     "issue",
 	Aliases: []string{"i"},
+	Short:   "provides CRUD operations",
 	RunE:    issueCommandRunE,
 }
 
@@ -27,6 +28,7 @@ func issueCommandRunE(cmd *cobra.Command, args []string) error {
 var issueListCommand = &cobra.Command{
 	Use:     "list",
 	Aliases: []string{"l"},
+	Short:   "list issues",
 	RunE:    issueListCommandRunE,
 }
 
@@ -117,6 +119,7 @@ ORDER BY i.created_at DESC
 var issueCreateCommand = &cobra.Command{
 	Use:     "create",
 	Aliases: []string{"c"},
+	Short:   "create issue",
 	RunE:    issueCreateCommandRunE,
 }
 
@@ -153,6 +156,7 @@ func issueCreateCommandRunE(cmd *cobra.Command, args []string) error {
 var issueReadCommand = &cobra.Command{
 	Use:     "read",
 	Aliases: []string{"r"},
+	Short:   "read issue",
 	RunE:    issueReadCommandRunE,
 }
 
@@ -172,6 +176,7 @@ func issueReadCommandRunE(cmd *cobra.Command, args []string) error {
 var issueUpdateCommand = &cobra.Command{
 	Use:     "update",
 	Aliases: []string{"u"},
+	Short:   "update issue",
 	RunE:    issueUpdateCommandRunE,
 }
 

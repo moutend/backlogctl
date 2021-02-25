@@ -14,6 +14,7 @@ import (
 var RootCommand = &cobra.Command{
 	Use:                "backlogctl",
 	Short:              "backlogctl - command line backlog client",
+	SilenceUsage:       true,
 	PersistentPreRunE:  rootPersistentPreRunE,
 	PersistentPostRunE: rootPersistentPostRunE,
 }
