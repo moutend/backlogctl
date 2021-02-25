@@ -95,3 +95,17 @@ CREATE TABLE IF NOT EXISTS issue (
 
   PRIMARY KEY(id)
 );
+
+CREATE TABLE IF NOT EXISTS wiki (
+  id INTEGER NOT NULL,
+  project_id INTEGER NOT NULL,
+  name STRING NOT NULL,
+  content STRING NOT NULL,
+  created_user_id INTEGER NOT NULL,
+  updated_user_id INTEGER NOT NULL,
+
+  created_at DATETIME NOT NULL,
+  updated_at DATETIME NOT NULL,
+
+  PRIMARY KEY(id)
+);
